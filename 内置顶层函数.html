@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内置顶层函数</title>   <!-- 不需要考虑作用域 -->
+</head>
+<body>
+	<script>
+	/*
+	escape(编码)   unescape(解码)	Number(将其他的数据类型转换为数字)	String()	Boolean(6个假的，其余全真)
+	parseInt(字符串转换为数字)	parseFloat(字符串转换为小数)	isNaN()
+	 */
+		let str = '呵呵';
+		console.log(escape(str))
+		console.log(unescape('%u5475%u5475'))
+		console.log(Number(0b11))	//3
+		console.log(Number(true))	//1
+		console.log(Number(undefined))	//NaN
+		console.log(Number(null))	//0
+		console.log(typeof Number('123'))	//number
+		console.log(Number('00123'))	//123
+		console.log(Number(0123))   //八进制
+		console.log(Number(123.00))	//123
+		console.log(Number('123px'))	//NaN
+		console.log(Number('123.1.2'))	//NaN
+		console.log(Number('abcd'))		//NaN
+		console.log(String(true))		//'true'
+		console.log(Boolean([]))	//true
+		console.log(Boolean(''))	//false	undefined	0	空字符串	null	NaN	
+		console.log(parseInt('0b1111'))		//0
+		console.log(parseInt('1234'))		//1234
+		console.log(parseInt('100px'))		//100
+		console.log(parseInt('-1.00px200'))		//-1
+		console.log(parseInt('abc100px200'))	//NaN
+		console.log(parseFloat('100.5px'))		//100.5
+		console.log(isNaN('abcd'))		//ture
+		console.log(String(123))
+	</script>
+</body>
+</html>

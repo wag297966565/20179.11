@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//json方法创建对象
+		//let zhangsan={}
+		//构建函数
+		function Person(){
+
+		}
+		let zhangsan=new Person()
+		let lisi=new Person()
+		//添加属性  方法
+		//谁  什么  等于
+		zhangsan.age=18;
+		zhangsan.name='zhangsan';
+		zhangsan.say=function(){
+			alert(zhangsan.name)
+		}
+		zhangsan.say()
+		lisi.classes='wuif1707-1'
+		lisi.skill='js'
+		//访问
+		//谁  什么
+		alert(zhangsan.name)
+		alert(zhangsan.age)
+		alert(lisi.classes)
+		alert(lisi.skill)
+	</script>
+</body>
+</html>

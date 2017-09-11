@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	//首次出现的位置
+		function indexOf(arr,vaelu){
+			if((typeof arr=='object') && (arguments.lenth>1)){
+				for(var i=0;i<arr.length;i++){
+					if(arr[i]==value){
+						return i;
+					}
+				}
+				return -1;
+			}
+			else{
+				return 'wrong';
+			}
+		}
+		alert(indexOf([11,22,33,44,55,66],22))
+	</script>
+	<script>
+	//最后一次出现的位置
+		var arr=[1,2,3,4,5]
+		function lastIndexOf(arr,value){
+			for(var i=arr.length-1;i>=0;i--){
+				if(arr[i]==value){
+					return i;
+				}
+			}
+			return -1;
+		}
+	</script>
+	<script>
+	//反转
+		function reverse(arr){
+			var newarr=[];
+			for(var i=arr.length;i>-1;i--){
+				push(newarr,arr[i])
+			}
+			return newarr;
+		}
+	</script>
+	<script>
+		function push(arr,...rest){
+			for(var i=0;i<rest.length;i++){
+				arr[arr.length]=rest[i]
+			}
+		}
+	</script>
+	<script>
+		//在任何位置进行删除和添加的函数
+		//删除
+		arr=[1,2,3,4,5]
+		function splice(arr,pos,num){
+			var newarr =[];
+			for (var i=0;i<arr.length;i++){
+				if(i>=pos && i<pos+num){
+					continue;
+				}
+				newarr[newarr.length]=arr[i];
+			}
+			return newarr;
+		}
+		//添加
+		//apliceAdd(arr,1,'a','b','c');
+		//apliceAdd(arr,pos,v,v2,v3);
+		//arr=[1,2,3,4,5];
+		//1,a,b,c,2,3,4,5
+		//1.pos前面
+		//2.i==pos 添加
+		//3.pos后面
+		function spliceAdd(arr,pos,...rest){
+			var newarr =[];
+			for(var i=0;i<pos;i++){
+				newarr[newarr.lenght]=arr[i];
+			}
+			for(var i=pos;i<rest.lenght;)
+			}
+		}
+	</script>
+	<script>
+		function evert(arr,fn){
+			for(var i=0;i<arr.length;i++){
+				if(!fn(arr[i])){
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
+	<script>
+		function some(arr,fn){
+			for(var i=0;i<arr.length;i++){
+				if(fn(arr[i])){
+					return true;
+				}
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>
